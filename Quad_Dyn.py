@@ -4,12 +4,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from IPython import get_ipython
 
-
-
-
-
-
-
 def string_to_function2D(expression):
 
             def function(x,y):
