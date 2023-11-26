@@ -22,10 +22,8 @@ def string_to_function3D(expression):
 
 class DS:
 
-
     def __init__(self, x, y, z = None):
         # x, y and z are strings, the differential equtions describing the dynamics
-
 
         self.diff_eq = [x,y]
 
@@ -69,9 +67,6 @@ class DS:
             def y_dot(x,y,z):
         
                 return y + dt * dy(x,y)   
-        
-
-
 
         # initial condition
         x = [O[0]]
@@ -118,17 +113,7 @@ class DS:
         
         ax1 = plt.axes()
         ax1.plot(self.xline, self.yline, linewidth = 0.5)
-        plt.axis('off')
-
-        # xmax = abs(max(self.xline))+0.1
-        # ymax = abs(max(self.yline))+0.1
-        # xmin = abs(min(self.xline))-0.1
-        # ymin = abs(min(self.yline))-0.1
-        
-        # plt.xlim(xmin, xmax)
-        # plt.ylim(ymin, ymax)
-
-            
+        plt.axis('off')           
 
     def plot3D(self, O, N):
          
@@ -175,8 +160,6 @@ class DS:
             self.xline = np.array(x)
             self.yline = np.array(y)
             self.zline = np.array(z)
-        
-
         
         plt.figure(dpi=3500)
 
